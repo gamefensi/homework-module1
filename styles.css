@@ -16,6 +16,10 @@ header {
   background: no-repeat lightgrey url(images/cliff_rock.jpg);
   background-size: 1500px;
 }
+#cliffs header {
+  background: no-repeat lightgrey url(images/forest_cliff.jpg);
+  background-size: 1500px;
+}
 .main-header {
   background-color: rgb(255, 255, 255, 0.8);
   width: 700.5px;
@@ -233,3 +237,16 @@ label {
   border: none;
 }
 /* End Form */
+
+/* Cliffs Page */
+
+.column {
+  float: left;
+  width: 45%;
+  padding: 20px;
+}
+.row::after {
+  content: "";  
+  clear: both;
+  display: table;
+}
