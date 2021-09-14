@@ -250,3 +250,10 @@ label {
   clear: both;
   display: table;
 }
+figcaption {
+  color: #FFF;
+  background: #852b1b;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
