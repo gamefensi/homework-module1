@@ -246,12 +246,12 @@ label {
   padding: 20px;
 }
 .row::after {
-  content: "";  
+  content: "";
   clear: both;
   display: table;
 }
 figcaption {
-  color: #FFF;
+  color: #fff;
   background: #852b1b;
   padding: 10px;
   text-align: center;
@@ -262,12 +262,15 @@ figcaption {
 
 #timeofday {
   padding: 15px 0 20px 0;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  background:  linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%)
+  background: linear-gradient(
+    0deg,
+    rgba(251, 215, 139, 1) 0%,
+    rgba(118, 213, 245, 1) 100%
+  );
 }
 
 #clock {
   color: #125688;
 }
-  
