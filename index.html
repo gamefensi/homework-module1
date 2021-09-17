@@ -141,8 +141,8 @@
       }
 
       //Convert GMT to standard
-      if (utchr > 12) {
-        utchr - 12;
+      if (utchr >= 12) {
+        utchr = utchr - 12;
       } else {
       }
 
@@ -155,13 +155,13 @@
       }
 
       //Check timezone based on converted difference
-      if ((adjTimeDiff = 7)) {
+      if (adjTimeDiff == 5) {
         timeZone = "PT";
-      } else if ((adjTimeDiff = 6)) {
+      } else if (adjTimeDiff == 4) {
         timeZone = "MT";
-      } else if ((adjTimeDiff = 5)) {
+      } else if (adjTimeDiff == 3) {
         timeZone = "CT";
-      } else if ((adjTimeDiff = 4)) {
+      } else if (adjTimeDiff == 2) {
         timeZone = "ET";
       } else {
         timeZone = "";
