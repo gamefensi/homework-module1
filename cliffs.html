@@ -43,57 +43,70 @@
         <div class="row">
           <div class="column">
             <figcaption>West Cliff</figcaption>
-            <img src="/images/cliff-west-sea.jpg" alt="West Cliff" style="width:100%"/>
+            <img
+              src="/images/cliff-west-sea.jpg"
+              alt="West Cliff"
+              style="width: 100%"
+            />
           </div>
           <div class="column">
             <figcaption>North Cliff</figcaption>
-            <img src="/images/cliff-north-mountain.jpg" alt="North Cliff" style="width:100%"/>
+            <img
+              src="/images/cliff-north-mountain.jpg"
+              alt="North Cliff"
+              style="width: 100%"
+            />
           </div>
           <div class="column">
             <figcaption>East Cliff</figcaption>
-            <img src="/images/cliff-east-river.jpg" alt="East Cliff" style="width:100%"/>
+            <img
+              src="/images/cliff-east-river.jpg"
+              alt="East Cliff"
+              style="width: 100%"
+            />
           </div>
           <div class="column">
             <figcaption>South Cliff</figcaption>
-            <img src="/images/cliff-south-canyon.jpg" alt="South Cliff" style="width:100%"/>
+            <img
+              src="/images/cliff-south-canyon.jpg"
+              alt="South Cliff"
+              style="width: 100%"
+            />
           </div>
         </div>
       </main>
       <section>
         <ul id="partners">
-          <li class="partner">
-            <img src="images/partner-bustour.png" alt="Partner Bus Tours" />
-          </li>
-          <li class="partner">
-            <img
-              src="images/partner-cabinrental.png"
-              alt="Partner Cabin Rental"
-            />
-          </li>
-          <li class="partner">
-            <img
-              src="images/partner-campingadv.png"
-              alt="Partner Camping Adventure"
-            />
-          </li>
-          <li class="partner">
-            <img
-              src="images/partner-collegetours.png"
-              alt="Partner College Tours"
-            />
-          </li>
-          <li class="partner">
-            <img
-              src="images/partner-rentalbike.png"
-              alt="Partner Bike Rentals"
-            />
-          </li>
-          <li class="partner">
-            <img src="images/partner-tourgroup.png" alt="Partner Tour Group" />
-          </li>
         </ul>
       </section>
     </div>
+    <!-- JavaScript Codes -->
+    <script>
+      var numOfPartners = 6;
+      var logos = [];
+      var fileNames = [
+        "bustour",
+        "cabinrental",
+        "campingadv",
+        "collegetours",
+        "rentalbike",
+        "tourgroup",
+      ];
+      var imageList = [];
+      var image;
+      var openList = "<li class='partner'>";
+      var closeList = "</li>";
+
+      //Create a loop to create 6 images starting with index of 0
+      for (var i = 0; i < numOfPartners; i++) {
+        logos.push("<img src='images/partner-" + fileNames[i] + ".png'>"); //Assemble file name into an image element and store in an array
+        image = openList + logos[i] + closeList; //Assemble everything
+        imageList.push(image); //Store the fully assembled code of each image list
+      }
+
+      //Display all six image codes stored in the array
+      document.getElementById("partners").innerHTML = imageList;
+    </script>
   </body>
   <footer>
     <div id="nondisclaimer">
