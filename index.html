@@ -54,7 +54,7 @@
       </main>
       <section>
         <ul id="partners">
-          <li class="partner">
+          <!-- <li class="partner">
             <img src="images/partner-bustour.png" alt="Partner Bus Tours" />
           </li>
           <li class="partner">
@@ -74,7 +74,7 @@
               src="images/partner-collegetours.png"
               alt="Partner College Tours"
             />
-          </li>
+          </li>P
           <li class="partner">
             <img
               src="images/partner-rentalbike.png"
@@ -83,7 +83,7 @@
           </li>
           <li class="partner">
             <img src="images/partner-tourgroup.png" alt="Partner Tour Group" />
-          </li>
+          </li> -->
         </ul>
       </section>
     </div>
@@ -178,5 +178,19 @@
 
     //Initial run of time data function
     currentTime();
+
+    var numOfPartners = 6;
+    var logos = [];
+    var fileNames = ["bustour","cabinrental","campingadv","collegetours","rentalbike","tourgroup"];
+    var imageList = [];
+    var image;
+    var openList = "<li class='partner'>";
+    var closeList = "</li>";
+
+    //Create a loop to create 6 images starting with index of 0
+
+
+    //Display all six image codes stored in the array
+    document.getElementById("partners").innerHTML = imageList;
   </script>
 </html>
