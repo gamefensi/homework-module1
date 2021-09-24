@@ -228,13 +228,25 @@ label {
 }
 /* submit button */
 form .button input {
-  margin: 1em 0 1em 28em;
+  display: inline;
+  margin: 1em 0 1em 28.5em;
   padding: 10px;
   width: 125px;
   font-weight: bold;
-  color: #fff;
+  /* color: #fff; */
   /* background-color: #4977d1; */
   border: none;
+}
+form .randomcode input {
+  width: 125px;
+  margin: 20px 5px 5px 265px;
+}
+form #codes {
+  display: inline;
+  font-weight: bold;
+  background-color: lightsteelblue;
+  padding: 10px;
+  Margin-left: 5px;
 }
 /* End Form */
 
