@@ -180,11 +180,11 @@ td:first-child {
   font-weight: bold;
   background: #bde1ff;
 }
-.highlight {
+/* .highlight {
   background: #9ed034;
   font-weight: bold;
   color: #FFF;
-}
+} */
 /* Contact Us */
 .contactinfo span:first-child {
   font-weight: bold;
@@ -290,3 +290,5 @@ figcaption {
 #clock {
   color: #125688;
 }
+
+
