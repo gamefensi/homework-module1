@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Great Cliffs of California</title>
-
+		<title>Great Cliffs of CA</title>
 		<!-- Meta Tags -->
 		<meta charset="UTF-8" />
-
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Bootstrap CSS -->
 		<link
 			rel="stylesheet"
@@ -21,44 +21,44 @@
 	</head>
 	<body id="home">
 		<div id="container" class="container-fluid">
-			<header>
-				<div class="main-header">
-					<nav class="navbar navbar-light navbar-expand-lg main-menu">
-						<a class="navbar-brand logo" href="index.html"
-							><img src="images/logo.png" alt="Great Cliffs Logo" width="125"
-						/></a>
-						<!-- Hamburger Menu -->
-						<!-- Values for data-target and aria-controls must match id of div with the collapse class -->
-						<button
-							class="navbar-toggler navbar-toggler-right ml-auto float-xs-right"
-							type="button"
-							data-toggle="collapse"
-							data-target="#navbarContent"
-							aria-controls="navbarContent"
-							aria-expanded="false"
-							aria-label="Toggle navigation"
-						>
-							<div class="clearfix"></div>
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarContent">
-							<ul class="navbar-nav float-right">
-								<li class="nav-item active">
-									<a class="nav-link text-white" href="index.html">Home</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="cliffs.html">Cliffs</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="activities.html">Activities</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="contact.html">Contact</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
+			<div id="navContainer" class="sticky-top">
+			<nav class="navbar navbar-dark navbar-expand-lg main-menu justify-content-center">
+				<a class="navbar-brand logo" href="index.html"
+					><img src="images/logo.png" alt="Great Cliffs Logo" width="125"
+				/></a>
+				<!-- Hamburger Menu -->
+				<!-- Values for data-target and aria-controls must match id of div with the collapse class -->
+				<button
+					class="navbar-toggler navbar-toggler-right ml-auto float-xs-right"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarContent"
+					aria-controls="navbarContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<div class="clearfix"></div>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<ul class="navbar-nav float-right">
+						<li class="nav-item">
+							<a class="nav-link text-white" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="cliffs.html">Cliffs</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="activities.html">Activities</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
 				</div>
+			</nav>
+		</div>
+			<header>
 			</header>
 
 			<main class="container">
@@ -113,11 +113,11 @@
 					</p>
 				</div>
 			</footer>
-    <!-- JavaScript Codes -->
-    <!-- Digital Clock -->
-    <script src="js/digclock.js"></script>
-<!-- Partners -->
-<script src="js/site_scripts.js"></script>
+		<!-- JavaScript Codes -->
+		<!-- Digital Clock -->
+		<script src="js/digclock.js"></script>
+		<!-- Partners -->
+		<script src="js/site_scripts.js"></script>
 		<!-- Bootstrap JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
