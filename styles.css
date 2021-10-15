@@ -6,79 +6,127 @@ header {
 }
 #home header {
   background: no-repeat lightgrey url(images/cliff_ocean.jpg);
-  background-size: 1500px;
+  background-size: cover;
 }
 #activities header {
   background: no-repeat lightgrey url(images/runfly.jpg);
-  background-size: 1500px;
+  background-size: cover;
 }
 #contact header {
   background: no-repeat lightgrey url(images/cliff_rock.jpg);
-  background-size: 1500px;
+  background-size: cover;
 }
 #cliffs header {
   background: no-repeat lightgrey url(images/forest_cliff.jpg);
-  background-size: 1500px;
+  background-size: cover;
 }
 .main-header {
   background-color: rgb(255, 255, 255, 0.8);
-  width: 700.5px;
+	width: 70%;
+	max-width: 650px;
+	display: flexbox;
   margin: 2em auto 0 auto;
   min-height: 100px;
   height: 100px;
 }
-.main-header .logo img {
+.navbar-brand.logo img {
   width: 100px;
   height: 100px;
   margin: 0 2em 0 0;
   float: left;
 }
+
 /* Navigation */
 .main-menu {
-  margin-left: 227px;
   font-weight: 400;
+  padding: 0 30px 0 0;
+  margin: 0;
 }
-.main-menu ul li {
-  list-style-type: none;
-  /* display: inline-block; */
-  float: left;
+.navbar {
+	height: 100px;
+}
+
+.nav-item {
   padding-left: 25px;
   padding-right: 25px;
   border-left: 1px solid rgba(202, 204, 202, 0.6);
-  line-height: 100px;
+  line-height: 84px;
   text-transform: uppercase;
   font-size: 14px;
 }
-.main-menu ul li a {
-  text-decoration: none;
-  color: #888;
-}
-.main-menu ul li a:hover {
+
+a.nav-link:hover {
   color: #9ed034;
 }
-.main-menu ul li.active {
+.nav-item.active {
   background: #9ed034;
 }
-.main-menu ul li.active a {
-  color: #fff;
+
+@media (max-width: 992px) {
+	.nav-item {
+		background: white;
+		border: rgba(202, 204, 202, 0.6) solid 1px;
+		padding-right: 100px;
+	}
 }
-main {
+
+/* Main */
+main.container {
   padding: 50px;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+	display: grid;
+}
+main h1 {
+	font-size: 2.5em;
+	padding-bottom: 0.5em;
+	color: #9ed034;
 }
 main h2 {
-  color: #9ed034;
+	font-size: 1.7em;
 }
-main p {
-  font-size: small;
+
+.headerbox {
+	grid-area: header;
 }
+.box1 {
+	grid-area: box1;
+}
+.box2 {
+	grid-area: box2;
+}
+@media only screen and (min-width: 768px) {
+	.container {
+		grid-template-columns: 1fr 1fr;
+		row-gap: 10px;
+		column-gap: 10px;
+		grid-template-areas:
+			'header header'
+			'box1 box2';
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.container {
+		grid-template-columns: 1fr 0.05fr 1fr;
+		row-gap: 10px;
+		column-gap: 10px;
+		grid-template-areas:
+			'header header header' /* span across 4 columns */
+			'. . .' /* gutter span across 4 columns */
+			'box1 box1 box1' /* 4 columns */
+			'. . .'
+			'box2 box2 box2';
+	}
+}
+
 /* Partners */
 section {
   width: 100%;
   background-color: #4288c3;
 }
 section #partners {
-  width: 1200px;
+	width: 100%;
   padding: 2em 0 2em 0;
   margin: 0 auto;
   text-align: center;
@@ -94,6 +142,7 @@ section #partners .partner img {
   width: 90px;
   height: 90px;
 }
+
 /* Footer */
 footer {
   width: 100%;
@@ -121,12 +170,14 @@ footer #disclaimer p {
 footer #nondisclaimer .social .fa {
   padding: 15px;
   font-size: 15px;
-  width: 15px;
+  box-sizing: unset;
+	width: 15px;
   text-align: center;
   text-decoration: none;
   margin: 0 4px;
   border-radius: 50%;
 }
+
 footer #nondisclaimer .social .fa:hover {
   opacity: 0.7;
 }
@@ -134,14 +185,41 @@ footer #nondisclaimer .social .fa-facebook {
   background: #3b5998;
   color: white;
 }
-footer #nondisclaimer .social .fa-instagram {
-  background: #125688;
-  color: white;
-}
+
 footer #nondisclaimer .social .fa-twitter {
   background: #55acee;
   color: white;
 }
+
+footer #nondisclaimer .social .fa-instagram {
+  background: #125688;
+  color: white;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+	footer #nondisclaimer .copy {
+		padding: 3.5em 0em 3.5em 0em;
+    text-align: center;
+		float: none;
+		font-size: 0.9em;
+	}
+	footer #nondisclaimer .social {
+		padding: 2.5em 0;
+		margin: 0;
+    text-align: center;
+		float: none;
+  }
+}
+
+  @media (max-width: 992px) {
+    .logo img {
+      position: relative;
+      bottom: 5px;
+    }
+    section #partners .partner {
+      margin: 5px;
+    }
+  }
 
 /* Activities */
 table {
@@ -180,11 +258,7 @@ td:first-child {
   font-weight: bold;
   background: #bde1ff;
 }
-/* .highlight {
-  background: #9ed034;
-  font-weight: bold;
-  color: #FFF;
-} */
+
 /* Contact Us */
 .contactinfo span:first-child {
   font-weight: bold;
