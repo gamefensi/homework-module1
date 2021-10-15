@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $('td:contains("Not Available")').addClass("noSelect");
-    $('td').not('.noSelect').mouseover(function () {
+    $('td').slice(1).not('.noSelect').mouseover(function () {
         $(this).css('cursor', 'pointer');
     })
     $("td").not("td:first-child").click(function (e) {
