@@ -60,8 +60,8 @@
       </div>
       <header>
       </header>
-      <main>
-        <h2>California's Greatest Cliffs</h2>
+      <main class="container-fluid">
+        <h1>California's Greatest Cliffs</h1>
         <p>
           The greatest cliffs are these four cliffs located in southern
           California. Each of these cliffs have their own uniqueness and beauty:
@@ -77,7 +77,7 @@
           close proximity.
         </p>
         <div class="row">
-          <div class="column">
+          <div class="col-lg-6 my-3">
             <figcaption>West Cliff</figcaption>
             <img
               src="/images/cliff-west-sea.jpg"
@@ -85,7 +85,7 @@
               style="width: 100%"
             />
           </div>
-          <div class="column">
+          <div class="col-lg-6 my-3">
             <figcaption>North Cliff</figcaption>
             <img
               src="/images/cliff-north-mountain.jpg"
@@ -93,7 +93,9 @@
               style="width: 100%"
             />
           </div>
-          <div class="column">
+        </div>
+        <div class="row">
+          <div class="col-lg-6 my-3">
             <figcaption>East Cliff</figcaption>
             <img
               src="/images/cliff-east-river.jpg"
@@ -101,7 +103,7 @@
               style="width: 100%"
             />
           </div>
-          <div class="column">
+          <div class="col-lg-6 my-3">
             <figcaption>South Cliff</figcaption>
             <img
               src="/images/cliff-south-canyon.jpg"
@@ -116,18 +118,33 @@
       </section>
     </div>
     <footer>
-      <div id="nondisclaimer">
-        <div class="copy">&copy; Copyright 2021 :: GreatCliffs.com</div>
-        <div class="social">
-          <h3></h3>
-        </div>
-      </div>
-      <div id="disclaimer">
-        <p></p>
-      </div>
+				<!-- Nondisclaimer -->
+				<div id="nondisclaimer">
+					<div class="copy">&copy; Copyright 2021 :: GreatCliffs.com</div>
+					<div class="social">
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-instagram"></a>
+						<a href="#" class="fa fa-twitter"></a>
+					</div>
+				</div>
+				<!-- End Nondisclaimer -->
+
+				<!-- Disclaimer -->
+				<div id="disclaimer">
+					<p>
+						This website is designed and created solely for educational purposes
+						only at Westcliff University. All contents are not intended for any
+						commercial gain or use.
+					</p>
+				</div>
     </footer>
-    <!-- JavaScript Codes -->
-    <!-- Partners -->
-    <script src="js/site_scripts.js"></script>
+		<!-- JavaScript Codes -->
+
+		<!-- Bootstrap JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<!-- Partners -->
+		<script src="js/site_scripts.js"></script>
   </body>
 </html>
