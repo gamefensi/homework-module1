@@ -135,8 +135,7 @@ header {
 }
 #navContainer {
 	width: 70%;
-	max-width: 700px;
-	display: flexbox;
+	max-width: 600px;
 	margin: 2em auto 0 auto;
 	min-height: 100px;
 	height: 100px;
@@ -348,6 +347,7 @@ form {
 }
 fieldset {
 	border: 2px solid #9ed034;
+	padding-bottom: 1em;
 }
 legend {
 	text-transform: uppercase;
@@ -384,19 +384,25 @@ label {
 	resize: none;
 }
 /* submit button */
-form .button input {
+
+/* /* form .button input {
 	display: inline;
 	margin: 1em 0 1em 28.5em;
 	padding: 10px;
 	width: 125px;
 	font-weight: bold;
-	/* color: #fff; */
-	/* background-color: #4977d1; */
+	color: #fff;
+	background-color: #4977d1;
 	border: none;
+} */
+
+.randomcode {
+	max-width: 500px;
+	margin: 1em 0em;
 }
 form .randomcode input {
 	width: 125px;
-	margin: 20px 5px 5px 265px;
+	/* margin: 20px 5px 5px 265px; */
 }
 form #codes {
 	display: inline;
