@@ -24,6 +24,14 @@ Bootstrap Breakpoints:
 			'box5'
 			'box6';
 	}
+	#home header, #contact header {
+		width: 100%;
+		min-height: 150px;
+	}
+	#cliffs header, #activities header {
+		width: 100%;
+		min-height: 150px;
+	}
 }
 
 /*small*/
@@ -36,33 +44,15 @@ Bootstrap Breakpoints:
 			'box3 box4'
 			'box5 box6';
 	}
-}
-
-/*medium*/
-@media (min-width: 768px) {
-	#home #container .container {
-		grid-template-columns: 1fr 1fr;
-		column-gap: 10px;
-		grid-template-areas:
-			'header header'
-			'box1 box2';
+	#cliffs header, #activities header  {
+		width: 100%;
+		min-height: 275px;
 	}
-	section #partners {
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-areas:
-			'box1 box2 box3'
-			'box4 box5 box6';
+	#home header, #contact header  {
+		width: 100%;
+		min-height: 275px;
 	}
 }
-
-/* large */
-@media (min-width: 992px) {
-	section #partners {
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-		grid-template-areas: 'box1 box2 box3 box4 box5 box6';
-	}
-}
-
 @media (max-width: 768px) {
 	footer #nondisclaimer .copy {
 		padding: 3.5em 0em 3.5em 0em;
@@ -89,6 +79,30 @@ Bootstrap Breakpoints:
 	}
 }
 
+/*medium*/
+@media (min-width: 768px) {
+	#home #container .container {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 10px;
+		grid-template-areas:
+			'header header'
+			'box1 box2';
+	}
+	section #partners {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas:
+			'box1 box2 box3'
+			'box4 box5 box6';
+	}
+	#home header, #contact header {
+		width: 100%;
+		min-height: 325px;
+	}
+	#cliffs header, #activities header {
+		width: 100%;
+		min-height: 425px;
+	}
+}
 @media (max-width: 992px) {
 	.logo img {
 		position: relative;
@@ -103,28 +117,67 @@ Bootstrap Breakpoints:
 		padding-right: 100px;
 	}
 }
+/* large */
+@media (min-width: 992px) {
+	section #partners {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: 'box1 box2 box3 box4 box5 box6';
+	}
+	#home header, #contact header {
+		width: 100%;
+		min-height: 400px;
+	}
+	#cliffs header, #activities header {
+		width: 100%;
+		min-height: 600px;
+	}
+}
+/* xlarge */
+@media (min-width: 1200px) {
+	#contact header, #cliffs header, #home header {
+		width: 100%;
+		min-height: 600px;
+	}
+	#activities header {
+		width: 100%;
+		min-height: 800px;
+	}
+
+}
+/* xxlarge */
+@media (min-width: 1400px) {
+	#contact header, #cliffs header, #home header {
+		width: 100%;
+		min-height: 700px;
+	}
+	#activities header {
+		width: 100%;
+		min-height: 1100px;
+	}
+}
+
+
 
 /* Body */
 #home {
 	background: no-repeat white url(images/cliff_ocean.jpg);
-	background-size: 100% 400px;
+	background-size: contain;
+	background-position: center top;
 }
 #activities {
 	background: no-repeat white url(images/runfly.jpg);
-	background-size: 100% 400px;
+	background-size: contain;
+	background-position: center top;
 }
 #contact {
 	background: no-repeat white url(images/cliff_rock.jpg);
-	background-size: 100% 400px;
+	background-size: contain;
+	background-position: center top;
 }
 #cliffs {
 	background: no-repeat white url(images/forest_cliff.jpg);
-	background-size: 100% 400px;
-}
-/* Header */
-header {
-	width: 100%;
-	min-height: 275px;
+	background-size: contain;
+	background-position: center top;
 }
 
 /* Navigation */
@@ -135,7 +188,7 @@ header {
 }
 #navContainer {
 	width: 70%;
-	max-width: 600px;
+	max-width: 700px;
 	margin: 2em auto 0 auto;
 	min-height: 100px;
 	height: 100px;
@@ -294,6 +347,9 @@ div #activitiesDesc {
 	max-width: 1000px;
 	margin: 4em auto 0 auto;
 }
+div #activitiesDesc h1 {
+	text-align: center;
+}
 .table {
 	max-width: 1000px;
 	margin: 4em auto 0 auto;
@@ -426,7 +482,7 @@ form #codes {
 #activities main #result {
 	min-height: 50px;
 	width: 300px;
-	padding: 0;
+	padding: 10px;
 }
 #activities main #result h4 {
 	margin-bottom: 1em;
@@ -437,18 +493,7 @@ form #codes {
 }
 /* End Form */
 
-/* Cliffs Page */
 
-/* .column {
-	float: left;
-	width: 45%;
-	padding: 20px;
-}
-.row::after {
-	content: '';
-	clear: both;
-	display: table;
-} */
 figcaption {
 	color: #fff;
 	background: #852b1b;
@@ -460,7 +505,7 @@ figcaption {
 
 /* Clock */
 
-#timeofday {
+/* #timeofday {
 	padding: 15px 0 20px 0;
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
@@ -473,4 +518,4 @@ figcaption {
 
 #clock {
 	color: #125688;
-}
+} */
