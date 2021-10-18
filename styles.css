@@ -146,10 +146,15 @@ Bootstrap Breakpoints:
 }
 /* xxlarge */
 @media (min-width: 1400px) {
-	#contact header, #cliffs header, #home header {
+	#contact header,  #home header {
 		width: 100%;
-		min-height: 700px;
+		min-height: 800px;
 	}
+	#cliffs header {
+		width: 100%;
+		min-height: 950px;
+	}
+
 	#activities header {
 		width: 100%;
 		min-height: 1100px;
@@ -397,13 +402,19 @@ td:first-child {
 .contactinfo span:first-child {
 	font-weight: bold;
 }
+.contactinfo div {
+	margin-top: 1em;
+}
+.contactinfo span {
+	line-height: 30pt;
+}
 /* Start Form */
 form {
 	margin-top: 1em;
 }
 fieldset {
 	border: 2px solid #9ed034;
-	padding-bottom: 1em;
+	padding: 0 1em 1em 1em;
 }
 legend {
 	text-transform: uppercase;
@@ -418,7 +429,7 @@ label {
 }
 /* name/email/phone */
 .textbox input {
-	width: 500px;
+	max-width: 500px;
 }
 /* how should we contact u? */
 .radios label {
@@ -436,7 +447,7 @@ label {
 /* How did you hear about us? */
 .commentbox textarea {
 	height: 175px;
-	width: 500px;
+	max-width: 500px;
 	resize: none;
 }
 /* submit button */
