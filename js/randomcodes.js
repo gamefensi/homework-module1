@@ -21,17 +21,17 @@ function generateCode() {
 document.getElementById("codes").innerHTML = generateCode();
 
 //Disable Button
-function disableButton(btnvalue) {
-    document.getElementById("submit").disabled = btnvalue; //able/disable button
-    if (btnvalue == true) { //test if button is disabled or enabled
+function disableButton() {
+    document.getElementById("submit").disabled = true; //able/disable button
+    // if (btnvalue == true) { //test if button is disabled or enabled
         //set button and label color translucent
-        document.getElementById("submit").style.backgroundColor = "rgba(73, 119, 209, 0.3)";
-        document.getElementById("submit").style.color = "rgba(255, 255, 255, 0.5)";
-    } else {
+        // document.getElementById("submit").style.backgroundColor = "rgba(73, 119, 209, 0.3)";
+        // document.getElementById("submit").style.color = "rgba(255, 255, 255, 0.5)";
+    // } else {
         //set button and label color with no transparency
-        document.getElementById("submit").style.backgroundColor = "rgba(73, 119, 209, 1)";
-        document.getElementById("submit").style.color = "rgba(255, 255, 255, 1)";
-    }
+        // document.getElementById("submit").style.backgroundColor = "rgba(73, 119, 209, 1)";
+        // document.getElementById("submit").style.color = "rgba(255, 255, 255, 1)";
+    // }
 }
 
 //listen to user input code
@@ -45,7 +45,7 @@ function evaluateCode() {
     var charset2 = code.trim(); //remove any hidden characters generated
     //test if code entered matches the number of generated characters
     if (charset1.length == charset2.length && charset1 == charset2) {
-        disableButton(false); //if match, run the function to enable button
+        document.getElementById("submit").disabled = false; //if match, run the function to enable button
     }
 }
 // //Activate function
